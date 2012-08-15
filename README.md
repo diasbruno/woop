@@ -1,4 +1,4 @@
 WooP
 ====
 
-WooP - OOP in wordpress for themes development. (Beta)
+WooP - OOP for wordpress theme development. (Beta)
