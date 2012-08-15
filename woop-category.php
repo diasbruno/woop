@@ -49,7 +49,7 @@ class WoopCategories {
     function WoopCategories() {}
     
     public function getCategoriesUsingArgs( $args ) {
-		return new WoopIterator( get_bookmarks( $args ), 'WoopCategory' );
+		return new WoopIterator( get_categories( $args ), 'WoopCategory' );
 	}
     
 }
