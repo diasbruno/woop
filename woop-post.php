@@ -44,11 +44,11 @@ class WoopPosts {
     function WoopPosts() {}
     
     public function getPostsUsingArgs( $args ) {
-		return new WoopIterator( get_bookmarks( $args ), 'WoopCategory' );
+		return new WoopIterator( get_posts( $args ), 'WoopPost' );
 	}
 }
 
 global $WooPPosts;
-$WooPPosts = new WoopPost();
+$WooPPosts = new WoopPosts();
 
 ?>
