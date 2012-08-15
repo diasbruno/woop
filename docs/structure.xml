@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a8" title="">
+  <file path="woop-archive.php" hash="45636c5878e254a22b39bfacd76a6b7f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopArchive</name>
+      <full_name>\WoopArchive</full_name>
+      <docblock line="3">
+        <description><![CDATA[Data Object wrapper.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$archive</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>WoopArchive</name>
+        <full_name>WoopArchive</full_name>
+        <argument line="8">
+          <name>$archive</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>name</name>
+        <full_name>name</full_name>
+        <docblock line="14">
+          <description><![CDATA[Return the name of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="14" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>link</name>
+        <full_name>link</full_name>
+        <docblock line="22">
+          <description><![CDATA[Return the link of the tag using #get_tag_link( term_id ).]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="22" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>termId</name>
+        <full_name>termId</full_name>
+        <docblock line="30">
+          <description><![CDATA[Return the term_id of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="30" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="43" package="Default">
+      <extends/>
+      <name>WoopArchives</name>
+      <full_name>\WoopArchives</full_name>
+      <docblock line="40">
+        <description><![CDATA[Oop wrapper to tags.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="Default">
+        <name>WoopArchives</name>
+        <full_name>WoopArchives</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="50" package="Default">
+        <name>getTagsUsingArgs</name>
+        <full_name>getTagsUsingArgs</full_name>
+        <docblock line="47">
+          <description><![CDATA[This should return am iterator of tags using the same args as get_tags($args).]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+        <argument line="50">
+          <name>$args</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-archive.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $archive</error>
+      <error line="8" code="50010">No DocBlock was found for method WoopArchive()</error>
+      <error line="45" code="50010">No DocBlock was found for method WoopArchives()</error>
+      <error line="47" code="50015">Argument $args is missing from the Docblock of getTagsUsingArgs()</error>
+    </parse_markers>
+  </file>
+  <file path="woop-bookmark.php" hash="6d4c95e206609e5db6e4668a224d1e21" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopBookmark</name>
+      <full_name>\WoopBookmark</full_name>
+      <docblock line="3">
+        <description><![CDATA[Data Object wrapper.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$bookmark</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>WoopBookmark</name>
+        <full_name>WoopBookmark</full_name>
+        <argument line="8">
+          <name>$bookmark</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>name</name>
+        <full_name>name</full_name>
+        <docblock line="14">
+          <description><![CDATA[Return the link name of the bookmark using #link_name.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="14" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>link</name>
+        <full_name>link</full_name>
+        <docblock line="22">
+          <description><![CDATA[Return the link of the bookmark using #link_url.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="22" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="35" package="Default">
+      <extends/>
+      <name>WoopBookmarks</name>
+      <full_name>\WoopBookmarks</full_name>
+      <docblock line="32">
+        <description><![CDATA[Oop wrapper to tags.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="37" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="54" package="Default">
+        <name>getBookmarksUsingArgs</name>
+        <full_name>getBookmarksUsingArgs</full_name>
+        <docblock line="39">
+          <description><![CDATA[This should return am iterator of tags using the same args as get_tags($args).]]></description>
+          <long-description><![CDATA[<ul>
+<li>Valid options:
+'orderby'
+'order'
+'limit'
+'category'
+'category_name'
+'hide_invisible'
+'show_updated'
+'include'
+'exclude'
+'search'</li>
+</ul>]]></long-description>
+          <tag line="39" name="return" description="" type="\WoopIterator">
+            <type by_reference="false">\WoopIterator</type>
+          </tag>
+        </docblock>
+        <argument line="54">
+          <name>$args</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-bookmark.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $bookmark</error>
+      <error line="8" code="50010">No DocBlock was found for method WoopBookmark()</error>
+      <error line="37" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="39" code="50015">Argument $args is missing from the Docblock of getBookmarksUsingArgs()</error>
+    </parse_markers>
+  </file>
+  <file path="woop-category.php" hash="71001d2dc165d41375a317e4138cc184" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopCategory</name>
+      <full_name>\WoopCategory</full_name>
+      <docblock line="3">
+        <description><![CDATA[Data Object wrapper.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$category</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>WoopCategory</name>
+        <full_name>WoopCategory</full_name>
+        <argument line="8">
+          <name>$tag</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>name</name>
+        <full_name>name</full_name>
+        <docblock line="14">
+          <description><![CDATA[Return the name of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="14" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>link</name>
+        <full_name>link</full_name>
+        <docblock line="22">
+          <description><![CDATA[Return the link of the tag using #get_tag_link( term_id ).]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="22" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>termId</name>
+        <full_name>termId</full_name>
+        <docblock line="30">
+          <description><![CDATA[Return the term_id of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="30" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Default">
+        <name>numPosts</name>
+        <full_name>numPosts</full_name>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="47" package="Default">
+      <extends/>
+      <name>WoopCategories</name>
+      <full_name>\WoopCategories</full_name>
+      <docblock line="44">
+        <description><![CDATA[]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="49" package="Default">
+        <name>WoopCategories</name>
+        <full_name>WoopCategories</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Default">
+        <name>getCategoriesUsingArgs</name>
+        <full_name>getCategoriesUsingArgs</full_name>
+        <argument line="51">
+          <name>$args</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-category.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $category</error>
+      <error line="8" code="50010">No DocBlock was found for method WoopCategory()</error>
+      <error line="38" code="50010">No DocBlock was found for method numPosts()</error>
+      <critical line="44" code="50005">No short description for class \WoopCategories</critical>
+      <error line="49" code="50010">No DocBlock was found for method WoopCategories()</error>
+      <error line="51" code="50010">No DocBlock was found for method getCategoriesUsingArgs()</error>
+    </parse_markers>
+  </file>
+  <file path="woop-iterator.php" hash="56544c01133da8f7423a17310545c2a7" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopIterator</name>
+      <full_name>\WoopIterator</full_name>
+      <docblock line="3">
+        <description><![CDATA[Generic iterator.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="13" namespace="global" package="Default">
+        <name>$what</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="14" namespace="global" package="Default">
+        <name>$list</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="15" namespace="global" package="Default">
+        <name>$index</name>
+        <default><![CDATA[-1]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>WoopIterator</name>
+        <full_name>WoopIterator</full_name>
+        <argument line="8">
+          <name>$list</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="8">
+          <name>$what</name>
+          <default><![CDATA['']]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="17" package="Default">
+        <name>isEmpty</name>
+        <full_name>isEmpty</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="21" package="Default">
+        <name>reset</name>
+        <full_name>reset</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>hasNext</name>
+        <full_name>hasNext</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>get</name>
+        <full_name>get</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-iterator.php</error>
+      <error line="13" code="50018">No DocBlock was found for property $what</error>
+      <error line="14" code="50018">No DocBlock was found for property $list</error>
+      <error line="15" code="50018">No DocBlock was found for property $index</error>
+      <error line="8" code="50010">No DocBlock was found for method WoopIterator()</error>
+      <error line="17" code="50010">No DocBlock was found for method isEmpty()</error>
+      <error line="21" code="50010">No DocBlock was found for method reset()</error>
+      <error line="25" code="50010">No DocBlock was found for method hasNext()</error>
+      <error line="35" code="50010">No DocBlock was found for method get()</error>
+    </parse_markers>
+  </file>
+  <file path="woop-post.php" hash="8862c587a574bce4ce63fb63f683d04c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopPost</name>
+      <full_name>\WoopPost</full_name>
+      <docblock line="3">
+        <description><![CDATA[Data Object wrapper.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="30" namespace="global" package="Default">
+        <name>$post</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="28" package="Default">
+        <name>WoopPost</name>
+        <full_name>WoopPost</full_name>
+        <argument line="28">
+          <name>$post</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>id</name>
+        <full_name>id</full_name>
+        <docblock line="31">
+          <description><![CDATA[Return the id of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="31" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>authorId</name>
+        <full_name>authorId</full_name>
+        <docblock line="36">
+          <description><![CDATA[Return the author id of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="36" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="Default">
+        <name>authorLink</name>
+        <full_name>authorLink</full_name>
+        <docblock line="41">
+          <description><![CDATA[Return the author id of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="41" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="50" package="Default">
+        <name>type</name>
+        <full_name>type</full_name>
+        <docblock line="46">
+          <description><![CDATA[Return the id of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="46" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="55" package="Default">
+        <name>name</name>
+        <full_name>name</full_name>
+        <docblock line="51">
+          <description><![CDATA[Return the name of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="51" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="60" package="Default">
+        <name>title</name>
+        <full_name>title</full_name>
+        <docblock line="56">
+          <description><![CDATA[Return the title of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="56" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Default">
+        <name>excerpt</name>
+        <full_name>excerpt</full_name>
+        <docblock line="61">
+          <description><![CDATA[Return the raw content of the post.]]></description>
+          <long-description><![CDATA[<p>You have to apply the filters when use this method.</p>]]></long-description>
+          <tag line="61" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="72" package="Default">
+        <name>content</name>
+        <full_name>content</full_name>
+        <docblock line="67">
+          <description><![CDATA[Return the raw content of the post.]]></description>
+          <long-description><![CDATA[<p>You have to apply the filters when use this method.</p>]]></long-description>
+          <tag line="67" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="77" package="Default">
+        <name>link</name>
+        <full_name>link</full_name>
+        <docblock line="73">
+          <description><![CDATA[Return the link of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="73" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="82" package="Default">
+        <name>termId</name>
+        <full_name>termId</full_name>
+        <docblock line="78">
+          <description><![CDATA[Return the term_id of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="78" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="87" package="Default">
+        <name>guid</name>
+        <full_name>guid</full_name>
+        <docblock line="83">
+          <description><![CDATA[Return the guid of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="83" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="92" package="Default">
+        <name>parent</name>
+        <full_name>parent</full_name>
+        <docblock line="88">
+          <description><![CDATA[Return the post parent of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="88" name="return" description="" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="97" package="Default">
+        <name>status</name>
+        <full_name>status</full_name>
+        <docblock line="93">
+          <description><![CDATA[Return the status of the post.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="93" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="104" package="Default">
+      <extends/>
+      <name>WoopPosts</name>
+      <full_name>\WoopPosts</full_name>
+      <docblock line="101">
+        <description><![CDATA[]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="105" package="Default">
+        <name>WoopPosts</name>
+        <full_name>WoopPosts</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="107" package="Default">
+        <name>getPostsUsingArgs</name>
+        <full_name>getPostsUsingArgs</full_name>
+        <argument line="107">
+          <name>$args</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-post.php</error>
+      <error line="30" code="50018">No DocBlock was found for property $post</error>
+      <error line="28" code="50010">No DocBlock was found for method WoopPost()</error>
+      <critical line="101" code="50005">No short description for class \WoopPosts</critical>
+      <error line="105" code="50010">No DocBlock was found for method WoopPosts()</error>
+      <error line="107" code="50010">No DocBlock was found for method getPostsUsingArgs()</error>
+    </parse_markers>
+  </file>
+  <file path="woop-tag.php" hash="6edf89c4ff8a6c8aab26a66fcce34c62" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends/>
+      <name>WoopTag</name>
+      <full_name>\WoopTag</full_name>
+      <docblock line="3">
+        <description><![CDATA[Data Object wrapper.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$tag</name>
+        <default><![CDATA[]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>WoopTag</name>
+        <full_name>WoopTag</full_name>
+        <argument line="8">
+          <name>$tag</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>name</name>
+        <full_name>name</full_name>
+        <docblock line="14">
+          <description><![CDATA[Return the name of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="14" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>link</name>
+        <full_name>link</full_name>
+        <docblock line="22">
+          <description><![CDATA[Return the link of the tag using #get_tag_link( term_id ).]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="22" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>termId</name>
+        <full_name>termId</full_name>
+        <docblock line="30">
+          <description><![CDATA[Return the term_id of the tag.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="30" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="43" package="Default">
+      <extends/>
+      <name>WoopTags</name>
+      <full_name>\WoopTags</full_name>
+      <docblock line="40">
+        <description><![CDATA[Oop wrapper to tags.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="50" package="Default">
+        <name>getTagsUsingArgs</name>
+        <full_name>getTagsUsingArgs</full_name>
+        <docblock line="47">
+          <description><![CDATA[This should return am iterator of tags using the same args as get_tags($args).]]></description>
+          <long-description><![CDATA[]]></long-description>
+        </docblock>
+        <argument line="50">
+          <name>$args</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop-tag.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $tag</error>
+      <error line="8" code="50010">No DocBlock was found for method WoopTag()</error>
+      <error line="45" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="47" code="50015">Argument $args is missing from the Docblock of getTagsUsingArgs()</error>
+    </parse_markers>
+  </file>
+  <file path="woop.php" hash="738b2be5b16e9b97cddd08f1a42d69b7" package="Default">
+    <include line="6" type="Include Once" package="Default">
+      <name>woop-iterator.php</name>
+      <docblock line="3">
+        <description><![CDATA[This file includes all other files from WooP.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </include>
+    <include line="7" type="Include Once" package="Default">
+      <name>woop-bookmark.php</name>
+    </include>
+    <include line="8" type="Include Once" package="Default">
+      <name>woop-archive.php</name>
+    </include>
+    <include line="9" type="Include Once" package="Default">
+      <name>woop-tag.php</name>
+    </include>
+    <include line="10" type="Include Once" package="Default">
+      <name>woop-category.php</name>
+    </include>
+    <include line="11" type="Include Once" package="Default">
+      <name>woop-post.php</name>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file woop.php</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
