@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>phpDocumentor » \WoopArchives</title>
+<title>phpDocumentor » \WoopArchiveCustom</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -52,52 +52,78 @@
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods</li>
-<li class="method public "><a href="#WoopArchives" title="WoopArchives :: "><span class="description">WoopArchives()
-        </span><pre>WoopArchives()</pre></a></li>
-<li class="method public "><a href="#getArchivesUsingArgs" title="getArchivesUsingArgs :: This should return am iterator of archives using the same args as #wp_get_archives( $args )."><span class="description">This should return am iterator of archives using the same args as #wp_get_archives( $args ).</span><pre>getArchivesUsingArgs()</pre></a></li>
+<li class="method public "><a href="#WoopArchiveCustom" title="WoopArchiveCustom :: Use, only if, for some reason, you need to make a different implementation."><span class="description">Use, only if, for some reason, you need to make a different implementation.</span><pre>WoopArchiveCustom()</pre></a></li>
+<li class="method public "><a href="#link" title="link :: Return the link of the tag using #get_tag_link( term_id )."><span class="description">Return the link of the tag using #get_tag_link( term_id ).</span><pre>link()</pre></a></li>
+<li class="method public "><a href="#name" title="name :: Return the name of the tag."><span class="description">Return the name of the tag.</span><pre>name()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24a_link" title="$a_link :: "><span class="description">$a_link</span><pre>$a_link</pre></a></li>
+<li class="property private "><a href="#%24a_name" title="$a_name :: "><span class="description">$a_name</span><pre>$a_name</pre></a></li>
 </ul>
 </div>
 <div class="span8">
-<a name="%5CWoopArchives" id="\WoopArchives"></a><ul class="breadcrumb">
+<a name="%5CWoopArchiveCustom" id="\WoopArchiveCustom"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/WoopArchives.html">WoopArchives</a>
+<span class="divider">\</span><a href="../classes/WoopArchiveCustom.html">WoopArchiveCustom</a>
 </li>
 </ul>
-<div href="../classes/WoopArchives.html" class="element class">
-<p class="short_description">Oop wrapper to tags.</p>
+<div href="../classes/WoopArchiveCustom.html" class="element class">
+<p class="short_description">Data Object wrapper.</p>
 <div class="details">
 <p class="long_description"></p>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a name="WoopArchives" id="WoopArchives"></a><div class="element clickable method public WoopArchives" data-toggle="collapse" data-target=".WoopArchives .collapse">
-<h2>WoopArchives()
-        </h2>
-<pre>WoopArchives() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
-</div>
-<a name="getArchivesUsingArgs" id="getArchivesUsingArgs"></a><div class="element clickable method public getArchivesUsingArgs" data-toggle="collapse" data-target=".getArchivesUsingArgs .collapse">
-<h2>This should return am iterator of archives using the same args as #wp_get_archives( $args ).</h2>
-<pre>getArchivesUsingArgs(\$args $args, \$type $type) : <a href="../classes/WoopIterator.html">\WoopIterator</a></pre>
+<a name="WoopArchiveCustom" id="WoopArchiveCustom"></a><div class="element clickable method public WoopArchiveCustom" data-toggle="collapse" data-target=".WoopArchiveCustom .collapse">
+<h2>Use, only if, for some reason, you need to make a different implementation.</h2>
+<pre>WoopArchiveCustom(\$archive $archive) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <p class="long_description"></p>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$args</h4>
-<code>\$args</code><p>{array} The same information you pass for #wp_get_archives( $args ).</p>
+<h4>$archive</h4>
+<code>\$archive</code><p>Raw archive from #wp_get_archives().</p>
 </div>
-<div class="subelement argument">
-<h4>$type</h4>
-<code>\$type</code><p>{string} 'normal' don't apply any manipulation to the information from wp_get_archives() | 'custom' apply.</p>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/WoopIterator.html">\WoopIterator</a></code></div>
 </div></div>
+</div>
+<a name="link" id="link"></a><div class="element clickable method public link" data-toggle="collapse" data-target=".link .collapse">
+<h2>Return the link of the tag using #get_tag_link( term_id ).</h2>
+<pre>link() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="name" id="name"></a><div class="element clickable method public name" data-toggle="collapse" data-target=".name .collapse">
+<h2>Return the name of the tag.</h2>
+<pre>name() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24a_link" id="$a_link"> </a><div class="element clickable property private $a_link" data-toggle="collapse" data-target=".$a_link .collapse">
+<h2>$a_link</h2>
+<pre>$a_link </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24a_name" id="$a_name"> </a><div class="element clickable property private $a_name" data-toggle="collapse" data-target=".$a_name .collapse">
+<h2>$a_name</h2>
+<pre>$a_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
 </div>
 </div>
 </div>
