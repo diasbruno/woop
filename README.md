@@ -1,7 +1,7 @@
 WooP
 ====
 
-WooP - OOP for wordpress theme development. (Beta)
+WooP - OOP for wordpress theme development. (Super Alpha)
 
 # Usage
 
