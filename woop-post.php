@@ -71,7 +71,7 @@ class WoopPost {
 	 */
 	public function content() { return $this->post->post_content; }
 	/**
-	 * Return the link of the tag using #get_tag_link( term_id ).
+	 * Return the link of the post.
 	 * @return string
 	 */
 	public function link() { return 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"].$this->post->post_name; }
