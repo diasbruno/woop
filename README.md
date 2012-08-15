@@ -26,7 +26,7 @@ When you use a global, it will ways return an iterator. So you will have somethi
 	$tags = $WooPTags->getTagsUsingArgs( args );
 	
 	
-	if ( $tags->isEmpty ) {
+	if ( $tags->isEmpty() ) {
 		echo 'Iterator is empty';
 	} else {
 		while ( $tags->hasNext() ) {
