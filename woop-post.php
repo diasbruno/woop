@@ -5,18 +5,26 @@
  */
 class WoopPost {
 	
-	function WoopPost( $tag ) {
-		$this->post = $tag;
+	function WoopPost( $post ) {
+		$this->post = $post;
 	}
 
 	private $post;
 
 	/**
-	 * Return the name of the tag.
+	 * Return the name of the post.
 	 * @return string
 	 */
 	public function name() {
 		return $this->post->name;
+	}
+	
+	/**
+	 * Return the title of the post.
+	 * @return string
+	 */
+	public function title() {
+	    return $thi->post->post_title;
 	}
 
 	/**
