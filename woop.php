@@ -3,8 +3,8 @@
 /**
  * This file includes all other files from WooP.
  */
-include_once( 'WoopIterator.php' );
-include_once( 'WoopTag.php' );
-include_once( 'WoopBookmark.php' );
+include_once( 'woop-iterator.php' );
+include_once( 'woop-tag.php' );
+include_once( 'woop-bookmark.php' );
 
 ?>
