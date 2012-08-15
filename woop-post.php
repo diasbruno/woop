@@ -5,26 +5,30 @@
  */
 class WoopPost {
 	
-/*
+	/*
 
-["post_author"]=> string(1) "1" 
-["post_date"]=> string(19) "2012-08-07 18:06:41" 
-["post_date_gmt"]=> string(19) "2012-08-07 21:06:41" 
-["comment_status"]=> string(4) "open" 
-["ping_status"]=> string(4) "open" 
-["post_password"]=> string(0) "" 
-["to_ping"]=> string(0) "" 
-["pinged"]=> string(0) "" 
-["post_modified"]=> string(19) "2012-08-07 18:07:13" 
-["post_modified_gmt"]=> string(19) "2012-08-07 21:07:13" 
-["post_content_filtered"]=> string(0) "" 
-["menu_order"]=> int(0) 
-["post_mime_type"]=> string(0) "" 
-["comment_count"]=> string(1) "2" 
-["filter"]=> string(3) "raw" 
-}
-*/
+	["post_author"]=> string(1) "1" 
+	["post_date"]=> string(19) "2012-08-07 18:06:41" 
+	["post_date_gmt"]=> string(19) "2012-08-07 21:06:41" 
+	["comment_status"]=> string(4) "open" 
+	["ping_status"]=> string(4) "open" 
+	["post_password"]=> string(0) "" 
+	["to_ping"]=> string(0) "" 
+	["pinged"]=> string(0) "" 
+	["post_modified"]=> string(19) "2012-08-07 18:07:13" 
+	["post_modified_gmt"]=> string(19) "2012-08-07 21:07:13" 
+	["post_content_filtered"]=> string(0) "" 
+	["menu_order"]=> int(0) 
+	["post_mime_type"]=> string(0) "" 
+	["comment_count"]=> string(1) "2" 
+	["filter"]=> string(3) "raw" 
 
+	*/
+	
+	/**
+	 * Create a data object for a post.
+	 * @param $post The post to be normalized.
+	 */
 	function WoopPost( $post ) { $this->post = $post; }
 
 	private $post;
@@ -102,8 +106,32 @@ class WoopPost {
  * 
  */
 class WoopPosts {
+
+	/**
+	 * @constructor
+	 */
     function WoopPosts() {}
     
+    /**
+     * Get all the posts from a specific category.
+     * @param $slug {string} The slug of the category.
+     * @param $args {array} The array of args as used in #get_posts() withot the 'category'.
+     * @return array Return the WoopCategory and the WoopIterator with all posts from that category.
+     */
+    public function getPostsFromCategorySlug( $slug, $args ) {
+    	$category = new WoopCategory( get_category_by_slug( $slug ) );
+    	$args[ 'category' ] = $category->termId();
+    	return array( 
+    		'category' => $category,
+    		'posts' => new WoopIterator( get_posts( $args ), 'WoopPost' ) 
+    	);
+    }
+
+    /**
+     * Get posts using #get_posts().
+     * @param $args {array} The array of args as used in #get_posts().
+     * @return WoopIterator
+     */
     public function getPostsUsingArgs( $args ) {
 		return new WoopIterator( get_posts( $args ), 'WoopPost' );
 	}
