@@ -20,17 +20,17 @@ WooP will create some globals for you:
 
 When you use a global, it will ways return an iterator. So you will have something like this:
 
-global $WooPTags;
-// 'get..UsingArgs' uses the wp methods. 
-// In this case, get_tags( $args ); 
-$tags = $WooPTags->getTagsUsingArgs( args );
- 	
-
-if ( $tags->isEmpty ) {
-	echo 'Iterator is empty';
-} else {
-	while ( $tags->hasNext() ) {
-		$tag = $tags->get();
-		echo '<p>'.$tag->name().'</p>';
-	}
-}
+# global $WooPTags;
+# // 'get..UsingArgs' uses the wp methods. 
+# // In this case, get_tags( $args ); 
+# $tags = $WooPTags->getTagsUsingArgs( args );
+# 	
+#
+# if ( $tags->isEmpty ) {
+#	echo 'Iterator is empty';
+# } else {
+#	while ( $tags->hasNext() ) {
+#		$tag = $tags->get();
+#		echo '<p>'.$tag->name().'</p>';
+#	}
+# }
