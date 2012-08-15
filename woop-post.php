@@ -16,7 +16,7 @@ class WoopPost {
 	 * @return string
 	 */
 	public function name() {
-		return $this->post->name;
+		return $this->post->post_name;
 	}
 	
 	/**
