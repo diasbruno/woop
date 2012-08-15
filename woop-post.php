@@ -18,7 +18,6 @@ class WoopPost {
 ["post_modified"]=> string(19) "2012-08-07 18:07:13" 
 ["post_modified_gmt"]=> string(19) "2012-08-07 21:07:13" 
 ["post_content_filtered"]=> string(0) "" 
-["guid"]=> string(33) "http://blogdaflavia.com.br/?p=843" 
 ["menu_order"]=> int(0) 
 ["post_mime_type"]=> string(0) "" 
 ["comment_count"]=> string(1) "2" 
@@ -34,6 +33,16 @@ class WoopPost {
 	 * @return int
 	 */
 	public function id() { return $this->post->ID; }
+	/**
+	 * Return the author id of the post.
+	 * @return int
+	 */
+	public function authorId() { return $this->post->post_author; }
+	/**
+	 * Return the author id of the post.
+	 * @return int
+	 */
+	public function authorLink() { return $this->post->post_author; }
 	/**
 	 * Return the id of the post.
 	 * @return int
