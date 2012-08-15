@@ -74,7 +74,7 @@ class WoopPost {
 	 * Return the link of the post.
 	 * @return string
 	 */
-	public function link() { return 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"].$this->post->post_name; }
+	public function link() { return site_url().'/'.$this->post->post_name; }
 	/**
 	 * Return the term_id of the post.
 	 * @return string
