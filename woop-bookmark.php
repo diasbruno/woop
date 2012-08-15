@@ -34,7 +34,7 @@ class WoopBookmark {
  */
 class WoopBookmarks {
 	 
-	function __construct() {}
+	function WoopBookmarks() {}
 
 	/**
 	 * This should return am iterator of tags using the same args as get_tags($args).

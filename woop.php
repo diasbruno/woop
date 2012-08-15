@@ -10,5 +10,4 @@ include_once( 'woop-tag.php' );
 include_once( 'woop-category.php' );
 include_once( 'woop-post.php' );
 
-
 ?>

@@ -42,7 +42,7 @@ class WoopTag {
  */
 class WoopTags {
 	 
-	function __construct() {}
+	function WoopTags() {}
 
 	/**
 	 * This should return am iterator of tags using the same args as get_tags($args).
