@@ -127,6 +127,10 @@ class WoopPosts {
     	);
     }
 
+    public function getPostsUsingQuery( $query ) {
+    	return new WoopIterator( query_posts( $query ), 'WoopPost' );
+    }
+
     /**
      * Get posts using #get_posts().
      * @param $args {array} The array of args as used in #get_posts().
